@@ -1,0 +1,84 @@
+@font-face {
+    font-family:"fuente1";
+    src: url(../fonts/fuente1.ttf);
+}
+@font-face {
+    font-family:"fuente4";
+    src: url(../fonts/fuente4.ttf)
+}
+*{
+    margin:0;
+    padding:0;
+}
+
+h1 {
+    font-family:"fuente4";
+    padding-bottom: 20px;
+    font-size:60px;
+    background:linear-gradient(90deg, #FF0000,#FF0051, #FF0087, #FF00C9, #FF00B9, #FF009B, #FF003E, #FF0017);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: animate 5s linear infinite;
+}   
+@keyframes animate{
+    0%{
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 80rem;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+body{
+    width: 90%;
+    margin: 20px auto;
+    background-image:url(../img/fondo.png);
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    color:hotpink;
+    max-width: 2000px;
+    font-family:"fuente1";
+
+}
+header nav {
+    background-color: red;
+    overflow: hidden;
+    font-size: 25px;
+    border-radius: 10px;
+}
+header nav li {
+    list-style:none;
+    float: left;
+
+}
+header nav li a {
+    padding: 10px 40px;
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+header nav li a:hover{
+   background-color:#D00707; 
+}
+
+video {
+    overflow: hidden;
+    margin: 12px;
+    padding: 5px;
+    border: 6px solid red;
+    margin-top: 30px;
+    float: left;
+}
+footer {
+    text-align:center;
+    color: black;
+    
+
+}
+.poster {
+    width: 100%;
+}
